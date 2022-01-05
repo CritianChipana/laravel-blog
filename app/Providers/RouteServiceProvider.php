@@ -31,6 +31,9 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        Route::prefix('web-api')
+        ->namespace($this->namespace)
+        ->group(base_path('app/Modules/Reports/Routes/api.php'));
 
         parent::boot();
     }

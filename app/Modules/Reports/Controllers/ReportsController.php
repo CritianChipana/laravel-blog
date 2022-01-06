@@ -9,7 +9,7 @@ class ReportsController extends Controller{
     
     protected $IReports ;
 
-    public function __construct($IReports){
+    public function __construct(IReports $IReports){
         $this->IReports = $IReports;
     }
 
@@ -17,8 +17,6 @@ class ReportsController extends Controller{
         $results = $this->IReports->getReports();
         return $results;
     }
-
-
 }
 
 

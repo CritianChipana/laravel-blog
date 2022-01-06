@@ -15,8 +15,6 @@ class ServiceOrchestration extends ServiceProvider
             return new RepoReports(new DB);
         });
     }
-
 }
-
 
 ?>
